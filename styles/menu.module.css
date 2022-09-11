@@ -1,0 +1,157 @@
+.navbar {
+    background-color: rgb(204, 201, 201);
+    height: 60px;
+    opacity: 0.7;
+    box-shadow: 0px 0px 4px rgb(100, 100, 100);
+}
+.header {
+    padding: 10px 0 ;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    letter-spacing: .5px;
+}
+
+.header ul li a {
+    text-decoration: none;
+}
+
+.header ul li a:hover{
+    color:#21660c;
+}
+
+.header ul li a.textRoutes{
+    color: rgb(75, 74, 74)
+}
+
+.logo {
+    justify-content: center;
+}
+
+.logo img{
+    width: 60px;
+    border-radius: 50%;
+}
+
+.items {
+   display: none;
+}
+.items li{
+    margin: 0 15px;
+}
+
+.items a{
+    position: relative;
+}
+
+.header ul li a.textRoutes:hover{
+    color:rgb(46, 124, 46);
+    font-weight: 600;
+}
+
+.header ul li a.textRoutes:after{
+    content: "";
+    position: absolute;
+    background-color: rgb(72, 138, 72);
+    height: 2px;
+    border-radius: 10px;
+    width: 0;
+    left: 0;
+    bottom: -6px;
+    transition: .3s;
+}
+
+.header ul li a.textRoutes:hover:after{
+    width: 100%;
+}
+
+.search {
+    height: 45px;
+    width: 40px;
+    display: flex;
+    border-radius: 5px;
+    /* padding: 0 10px; */
+    margin-right: 10px;
+}
+
+.search form{
+    display: flex;
+}
+
+.search input {
+    height: 100%;
+    width: 200px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    background: rgb(243, 240, 240);
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+    display: none;
+}
+
+
+.search form button {
+    border-radius: 0 5px 5px 0;
+    color: rgb(75, 74, 74);
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    padding: 12px;
+    font-size: 1rem;
+}
+
+li.heart, li.user, li.shop{
+    margin: 0 10px;
+}
+
+.user {
+    display: none;
+}
+
+li.heart a, li.user a, li.shop a{
+    color: rgb(75, 74, 74);
+    opacity: .9;
+    cursor: pointer;
+}
+
+@media(min-width: 771px){
+    .items {
+        display: flex;
+    }
+    .burger {
+        display:none;
+    }
+    .logo {
+        order: -1;
+    }
+    .heart, .shop {
+        order: 1;
+    }
+   
+}
+
+@media(min-width: 1024px){
+    .search input {
+        display: flex;
+    }
+    .search form button {
+        background: rgb(243, 240, 240);
+        border-radius: 0 5px 5px 0;
+    }
+    .items{
+        margin-left: 150px;
+    }
+    .user{
+        display: block;
+    }
+}
