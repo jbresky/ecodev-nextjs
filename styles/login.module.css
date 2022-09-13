@@ -1,0 +1,120 @@
+.loginForm{
+    display: flex;
+    justify-content: center;
+    /* margin-top: 1.5rem; */
+}
+
+.loginForm input, .register-container input, .register-container select{
+    /* border: 0.5px solid rgb(72, 138, 72); */
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+    border: 2px solid #f7f7f7;
+    width: 250px;
+    /* border:none; */
+    padding: 1.3rem;
+    /* padding: 2rem; */
+    background-color: #f7f7f7;
+    transition: 500ms ease;  
+}
+
+.loginForm input:hover, .register-container input, .register-container select{
+    border: 2px solid #000; 
+}
+
+.inputForm{
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.titleForm{
+    margin: 50px 0 10px 0;
+    font-size: 1.4rem;
+    font-weight: normal;
+    text-align: center;
+    color: #242424;
+}
+
+.community {
+    font-size: 15px;
+    text-align: center;
+    color: #242424;
+    font-weight: normal;
+}
+
+.formCookie {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.formcookie input{
+    max-width: 100px;
+    height: 11px;
+}
+
+.formCookie label{
+    font-size: 0.9rem;
+    color: #4b4a4a;
+}
+
+input#remb{
+    width: 20px;
+}
+
+.formBtnSend{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.formBtnSend button{
+    border-radius: 100px;
+    border: none;
+    position:relative;
+    width: 250px;
+    height: 85px;
+    background: var(--background-color);
+    padding: 1.5rem 1rem;
+    color: #ffffff;
+    cursor: pointer;
+
+    --background-color: #538d42;
+    --border-size: 2.5px
+}
+
+.formBtnSend button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: var(--border-size) solid var(--background-color);
+    border-radius: 100px;
+    transition: all 300ms cubic-bezier(0.2, 0, 0.4, 1);
+}
+
+.formBtnSend button:hover::before{
+    top: calc(var(--border-size) * -2.5);
+    left: calc(var(--border-size) * -2.5);
+    right: calc(var(--border-size) * -2.5);
+    bottom: calc(var(--border-size) * -2.5);
+}
+
+.preFooter{
+        height: 6rem;
+    }
+    
+@media (min-width: 600px) {
+    .loginForm input{
+        width: 400px;
+    }
+    .formBtnSend button{
+        width: 400px;
+    }
+}

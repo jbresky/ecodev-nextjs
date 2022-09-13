@@ -27,7 +27,7 @@ export default function Menu() {
                 </li>
                 <div className={style.items}>
                     <li>
-                        <Link href='/products'>
+                        <Link href='/store'>
                             <a className={style.textRoutes}>Productos</a>
                         </Link>
                     </li>
@@ -49,9 +49,15 @@ export default function Menu() {
 
                 {/* <li className={style.user}><a href='/users/login'><img src="/img/users/<%= userData.avatar %> " width="40" style="border-radius: 50%; height: 40px; object-fit: cover;" alt="User"/></a></li> */}
 
-                <li className={style.user}><a href='/users/login'><span class="material-icons-outlined">
+                <li className={style.user}>
+                    <Link href='users/login'>
+                    <a>
+                        <span class="material-icons-outlined">
                     account_circle
-                </span></a></li>
+                </span>
+                </a>
+                </Link>
+                </li>
             </ul>
         </nav>
         </>
