@@ -40,33 +40,35 @@ export default function Footer() {
                             <h4>Síguenos</h4>
                             <li>
                                 <i className="fab fa-facebook-f"></i>
-                                <a href="#">
+                                <a>
                                     Facebook
                                 </a>
                             </li>
                             <li>
                                 <i className="fab fa-instagram"></i>
-                                <a href="#">
+                                <a>
                                     Instagram
                                 </a>
                             </li>
                             <li>
                                 <i className="fab fa-twitter"></i>
-                                <a href="#">
+                                <a>
                                     Twitter
                                 </a>
                             </li>
                             <li>
                                 <i className="fab fa-pinterest"></i>
-                                <a href="#">
+                                <a>
                                     Pinterest
                                 </a>
                             </li>
                             <li>
                                 <i className="fab fa-github"></i>
-                                <a href="https://github.com/jbresky/ecodev">
+                                <Link href="https://github.com/jbresky/ecodev">
+                                <a>
                                     Github
                                 </a>
+                                </Link>
                             </li>
                         </ul>
                 </section>
@@ -74,7 +76,9 @@ export default function Footer() {
                     <div className={style.box2}>
                         <ul className={style.ecoLogo}>
                             <li>
-                                <a href="/"><img src="/img/back/eco-logo-3.png" alt="" /></a>
+                                <Link href="/">
+                                <a><img src="/img/back/eco-logo-3.png" alt="" /></a>
+                                </Link>
                             </li>
                         </ul>
                         <ul className={style.list3}>

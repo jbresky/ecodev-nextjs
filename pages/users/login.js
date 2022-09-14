@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Layout from "../../components/layout";
 import SecFooter from "../../components/secFooter";
 import style from '../../styles/login.module.css'
@@ -8,7 +9,11 @@ export default function Login(){
         <Layout/>
         <div className="formHeader">
         <h3 className={style.titleForm}>Inciar sesión</h3>
-        <h4 className={style.community}>¿Aún no tienes una cuenta? <a href="/users/register">Unite a la comunidad</a></h4>
+        <h4 className={style.community}>¿Aún no tienes una cuenta?
+        <Link href="/users/register">
+        <a>Unite a la comunidad</a>
+        </Link>
+        </h4>
       </div>
 
       <main class={style.loginForm}>
@@ -28,7 +33,12 @@ export default function Login(){
               <label class="remb" htmlFor="remb">Recordar</label>
               <input type="checkbox" id={style.remb} name="remember"/>
             </div>
-              <label><a href="">¿Has olvidado tu contraseña?</a></label>
+              <label>
+                <Link href='#'>
+                  <a>¿Has olvidado tu contraseña?</a>
+                  </Link>
+                  </label>
+                  
             </div>
             <br/>
             <div class={style.formBtnSend}>
