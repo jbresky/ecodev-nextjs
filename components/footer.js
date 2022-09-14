@@ -1,5 +1,6 @@
 import style from '../styles/footer.module.css'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Footer() {
     return (
@@ -78,7 +79,8 @@ export default function Footer() {
                         <ul className={style.ecoLogo}>
                             <li>
                                 <Link href="/">
-                                <a><img src="/img/back/eco-logo-3.png" alt=""/>
+                                <a>
+                                    <Image src="/img/back/eco-logo-3.png" alt="" width={125} height={72}/>
                                 </a>
                                 </Link>
                             </li>
@@ -95,33 +97,37 @@ export default function Footer() {
                     <div className={style.payment}>
                         <ul>
                             <li>
-                                <img src="/img/back/visa.png" alt="" />
+                                <Image src="/img/back/visa.png" alt="" width={55} height={30}/>
                             </li>
                             <li>
-                                <img src="/img/back/mastercard.png" alt="" />
+                                <Image src="/img/back/mastercard.png" alt="" width={55} height={30}/>
                             </li>
                             <li>
-                                <img src="/img/back/amex.png" alt="" />
+                            <Image src="/img/back/amex.png" alt="" width={55} height={30}/>                            
                             </li>
                             <li>
-                                <img src="/img/back/paypal.png" alt="" />
+                            <Image src="/img/back/paypal.png" alt="" width={55} height={30}/>                            
                             </li>
                             <li>
-                                <img src="/img/back/pay.png" alt="" />
+                                <Image src="/img/back/pay.png" alt="" width={55} height={30}/>
                             </li>
                             <li>
-                                <img src="/img/back/ipay.png" alt="" />
+                            <Image src="/img/back/ipay.png" alt="" width={55} height={30}/>
                             </li>
                             <li>
-                                <img src="/img/back/afterpay.png" alt="" />
+                                <Image src="/img/back/afterpay.png" alt="" width={55} height={30}/>
                             </li>
                         </ul>
                     </div>
                     <div className={style.apps}>
 
                         <ul>
-                            <li><img src="/img/back/appstore2.png" alt="" /></li>
-                            <li><img src="/img/back/googleplay2.png" alt="" /></li>
+                            <li>
+                                <Image src="/img/back/appstore2.png" alt="" width={122} height={40}/>
+                                </li>
+                            <li>
+                            <Image src="/img/back/googleplay2.png" alt="" width={122} height={40}/>
+                               </li>
                         </ul>
 
                     </div>
