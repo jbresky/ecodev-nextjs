@@ -1,4 +1,5 @@
 import style from '../styles/footer.module.css'
+import Link from 'next/link'
 
 export default function Footer() {
     return (
@@ -77,7 +78,8 @@ export default function Footer() {
                         <ul className={style.ecoLogo}>
                             <li>
                                 <Link href="/">
-                                <a><img src="/img/back/eco-logo-3.png" alt="" /></a>
+                                <a><img src="/img/back/eco-logo-3.png" alt=""/>
+                                </a>
                                 </Link>
                             </li>
                         </ul>
