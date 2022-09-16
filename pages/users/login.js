@@ -11,7 +11,7 @@ export default function Login(){
         <h3 className={style.titleForm}>Inciar sesión</h3>
         <h4 className={style.community}>¿Aún no tienes una cuenta?
         <Link href="/users/register">
-        <a>Unite a la comunidad</a>
+        <a style={{fontWeight: 700}}> Unite a la comunidad</a>
         </Link>
         </h4>
       </div>
