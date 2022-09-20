@@ -21,7 +21,7 @@ export default function Menu() {
                 <li className={style.logo}>
                     <Link href='/'>
                         <a>
-                            <img src="/img/Logo-v2.ico" />
+                            <Image src="/img/Logo-v2.ico" alt="logo"/>
                         </a>
                     </Link>
                 </li>

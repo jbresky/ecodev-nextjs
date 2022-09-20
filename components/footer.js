@@ -80,7 +80,7 @@ export default function Footer() {
                             <li>
                                 <Link href="/">
                                 <a>
-                                    <Image src="/img/back/eco-logo-3.png" alt="" width={125} height={72}/>
+                                    <Image src="/img/back/eco-logo-3.png" alt="logo2" width={125} height={72}/>
                                 </a>
                                 </Link>
                             </li>
@@ -97,25 +97,25 @@ export default function Footer() {
                     <div className={style.payment}>
                         <ul>
                             <li>
-                                <Image src="/img/back/visa.png" alt="" width={55} height={30}/>
+                                <Image src="/img/back/visa.png" alt="visa" width={55} height={30}/>
                             </li>
                             <li>
-                                <Image src="/img/back/mastercard.png" alt="" width={55} height={30}/>
+                                <Image src="/img/back/mastercard.png" alt="mastercard" width={55} height={30}/>
                             </li>
                             <li>
-                            <Image src="/img/back/amex.png" alt="" width={55} height={30}/>                            
+                            <Image src="/img/back/amex.png" alt="amex" width={55} height={30}/>                            
                             </li>
                             <li>
-                            <Image src="/img/back/paypal.png" alt="" width={55} height={30}/>                            
+                            <Image src="/img/back/paypal.png" alt="paypal" width={55} height={30}/>                            
                             </li>
                             <li>
-                                <Image src="/img/back/pay.png" alt="" width={55} height={30}/>
+                                <Image src="/img/back/pay.png" alt="pay" width={55} height={30}/>
                             </li>
                             <li>
-                            <Image src="/img/back/ipay.png" alt="" width={55} height={30}/>
+                            <Image src="/img/back/ipay.png" alt="ipay" width={55} height={30}/>
                             </li>
                             <li>
-                                <Image src="/img/back/afterpay.png" alt="" width={55} height={30}/>
+                                <Image src="/img/back/afterpay.png" alt="afterpay" width={55} height={30}/>
                             </li>
                         </ul>
                     </div>
@@ -123,10 +123,10 @@ export default function Footer() {
 
                         <ul>
                             <li>
-                                <Image src="/img/back/appstore2.png" alt="" width={122} height={40}/>
+                                <Image src="/img/back/appstore2.png" alt="appstore" width={122} height={40}/>
                                 </li>
                             <li>
-                            <Image src="/img/back/googleplay2.png" alt="" width={122} height={40}/>
+                            <Image src="/img/back/googleplay2.png" alt="gplay" width={122} height={40}/>
                                </li>
                         </ul>
 
