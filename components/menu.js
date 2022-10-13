@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import style from '../styles/menu.module.css'
+import Image from 'next/image'
 
 export default function Menu() {
     return (
@@ -21,7 +22,7 @@ export default function Menu() {
                 <li className={style.logo}>
                     <Link href='/'>
                         <a>
-                            <Image src="/img/Logo-v2.ico" alt="logo"/>
+                            <Image src="/img/Logo-v2.ico" alt="logo" width={40} height={40}/>
                         </a>
                     </Link>
                 </li>
