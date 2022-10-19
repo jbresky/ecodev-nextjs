@@ -6,7 +6,7 @@ import style from '../../styles/login.module.css'
 export default function Login(){
     return (
         <>
-        <Layout/>
+        <Layout>
         <div className="formHeader">
         <h3 className={style.titleForm}>Inciar sesión</h3>
         <h4 className={style.community}>¿Aún no tienes una cuenta?
@@ -48,6 +48,7 @@ export default function Login(){
            
           </main>
         <section className={style.preFooter}></section>
+        </Layout>
         <SmallFooter/>
        </> 
       
