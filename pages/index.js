@@ -6,7 +6,6 @@ import Product from '../components/Product'
 import axios from 'axios';
 
 export default function Home() {
-  return <h1>Hi</h1>
   const [products, setProducts] = useState([]);
   const [errorMessage, setErrorMessage] = useState('');
 
@@ -25,7 +24,8 @@ export default function Home() {
         }
         setErrorMessage(message);
       })
-  }, [])
+  }, []);
+  
   return (
     <>
       <Layout title='Home'>
