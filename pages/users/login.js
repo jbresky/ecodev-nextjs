@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Layout from "../../Components/Layout";
-import SmallFooter from "../../Components/SmallFooter";
+import Layout from "../../components/Layout";
+import SmallFooter from "../../components/SmallFooter";
 import style from '../../styles/login.module.css'
 
 export default function Login(){
