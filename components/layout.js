@@ -2,7 +2,7 @@ import Head from "next/head";
 import Menu from "./menu";
 import style from '../styles/layout.module.css'
 
-export default function Layout({ title, children }) {
+function Layout({ title, children }) {
     return (
         <>
             <Head>
@@ -15,3 +15,5 @@ export default function Layout({ title, children }) {
         </>
     )
 }
+
+export default Layout
