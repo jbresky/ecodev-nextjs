@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Layout from "../../components/layout";
-import SecFooter from "../../components/secFooter";
+import Layout from "../../components/Layout";
+import SmallFooter from "../../components/SmallFooter";
 import style from '../../styles/login.module.css'
 
 export default function Login(){
@@ -48,7 +48,7 @@ export default function Login(){
            
           </main>
         <section className={style.preFooter}></section>
-        <SecFooter/>
+        <SmallFooter/>
        </> 
       
     )

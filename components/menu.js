@@ -9,9 +9,9 @@ export default function Menu() {
         <nav className={style.header}>
             <ul>
                 <li className={style.burger}>
-                    <span className="bar"></span>
-                    <span className="bar"></span>
-                    <span className="bar"></span>
+                    <span className={style.bar}></span>
+                    <span className={style.bar}></span>
+                    <span className={style.bar}></span>
                 </li>
                 <div className={style.search}>
                     <form action="/products/search" method="GET">
@@ -22,7 +22,7 @@ export default function Menu() {
                 <li className={style.logo}>
                     <Link href='/'>
                         <a>
-                            <Image src="/img/Logo-v2.ico" alt="logo" width={40} height={40}/>
+                            <Image src="/img/Logo-v2.ico" alt="logo" width={60} height={60}/>
                         </a>
                     </Link>
                 </li>
