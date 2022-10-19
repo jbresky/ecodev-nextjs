@@ -16,7 +16,7 @@ export default function Product({ item, showAs }){
             <button>{item.off}</button>
             <h3>{item.name}</h3>
             <div>
-                // precio con y sin descuento
+                {/* precio con y sin descuento */}
             </div>
             <button>Agregar al carrito</button>
         </article>
