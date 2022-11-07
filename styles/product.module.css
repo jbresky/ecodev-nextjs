@@ -1,0 +1,89 @@
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.item{
+    background-color: white;
+    padding: 20px;
+    font-size: 20px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+.item h3{
+    font-size: 32px;
+    margin: 5px 0;
+}
+
+.page{
+    background-color: white;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 50px rgba(0, 0, 0, .15);
+    transform: scale(0);
+    animation: scale .3s ease forwards 
+}
+
+button.gama{
+    background: #ffffff;
+    border: none;
+    border-radius: 50px;
+    padding: 7px 20px;
+    font-weight: 600;
+    box-shadow: 0 0 10px #b5b8b1;
+    color: rgb(78, 78, 78);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+a.gama {
+    position: relative;   
+    bottom: 50px;
+    left: 100px;
+}
+
+@keyframes scale{
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.info{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.price{
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.image{
+    border-radius: 4px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.image:hover {
+    transform: scale(1.05);
+}
+
+.listItem{
+    display: flex;
+    border-bottom: solid 1px #ccc;
+    justify-content: space-around;
+    padding: 10px 0;
+}

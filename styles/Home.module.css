@@ -67,6 +67,58 @@
   color: #333;
 }
 
+.iconText{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 2rem; */
+  /* margin: 2rem; */
+  /* position: relative; */
+}
+
+.container{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  width: 400px;
+  /* position: relative;
+  left: 300px; */
+}
+
+.iconText div.icon{
+  max-width: 30px;
+  justify-content: left;
+}
+.icon span{
+      font-size: 2rem;
+      color: rgb(75, 74, 74);
+      opacity: .9;
+  }
+.iconText div.text{
+  display: flex;
+  /* padding: 0 20px; */
+}
+.iconText ul{
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  padding-left: 1rem;
+}
+.iconText ul li{
+  margin: 5px 10px;
+}
+.iconText .title{
+  font-weight: 600;
+}
+
+
+@media(min-width: 771px) {
+  .iconText {
+    flex-direction: row;
+    padding: 0 2rem;
+  }
+} 
 @media (max-width: 600px) {
   .grid {
     width: 100%;
