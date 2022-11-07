@@ -29,17 +29,17 @@ export default function Menu() {
                 <div className={style.items}>
                     <li>
                         <Link href='/store'>
-                            <a className={style.textRoutes}>Productos</a>
+                            <a className={style.textRoutes}>Store</a>
                         </Link>
                     </li>
                     <li>
-                        <a href='#' className={style.textRoutes}>Nosotros</a></li>
+                        <a href='#' className={style.textRoutes}>About</a></li>
                     <li>
-                        <a href='#' className={style.textRoutes}>Medioambiente</a>
+                        <a href='#' className={style.textRoutes}>Environment</a>
                     </li>
                     <li>
                         <Link href='#'>
-                            <a className={style.textRoutes}>Únete</a>
+                            <a className={style.textRoutes}>Signup</a>
                         </Link>
                     </li>
                 </div>
