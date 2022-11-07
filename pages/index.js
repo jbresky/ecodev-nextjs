@@ -4,6 +4,10 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import Product from '../components/Product'
 import axios from 'axios';
+import Footer from '../components/Footer'
+import stylesProduct from '../styles/product.module.css'
+import BrandSignals from '../components/BrandSignals'
+
 
 export default function Home() {
   const [products, setProducts] = useState([]);
@@ -25,23 +29,35 @@ export default function Home() {
         setErrorMessage(message);
       })
   }, []);
-  
+
   return (
     <>
       <Layout title='Home'>
         <section className={styles.banner}>
           <div className={styles.bannerContent}>
             <Link href='/store'>
-              <a>Ver productos</a>
+              <a>See products</a>
             </Link>
           </div>
         </section>
-        <div className='items'>
-          <h1>Ofertas</h1>
+        <h1>Shop product range</h1>
+        <div className={stylesProduct.items}>
           {products && products.map(item => {
-            if (item.insale === 1) {
+            if (item.insale === null) {
               return <Product
-                showAs='home'
+                showAs='Home'
+                key={item.id}
+                item={item}
+              />
+            }
+          })}
+        </div>
+        <BrandSignals />
+        <div className={stylesProduct.items}>
+          {products && products.map(item => {
+            if (item.insale === null) {
+              return <Product
+                showAs='Home'
                 key={item.id}
                 item={item}
               />
@@ -49,6 +65,7 @@ export default function Home() {
           })}
         </div>
       </Layout>
+      <Footer />
     </>
   )
 }
