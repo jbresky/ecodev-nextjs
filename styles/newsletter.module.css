@@ -1,0 +1,70 @@
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    width: 90%;
+}
+
+.mailing {
+    object-fit: cover;
+}
+
+.newsletter div {
+    display: flex;
+    align-items: center;
+    font-size: .95rem;
+    color: rgb(25, 18, 79);
+    font-weight: 600;
+}
+
+.newsletter form {
+    height: 70px;
+}
+
+
+.subscribe {
+  gap: 15px;
+}
+
+.newsletter input {
+    margin-top: 1rem;
+    padding-left: 10px;
+    padding-right: 40px;
+    border: none;
+    border-bottom: 2px solid #8C95A5;
+    background-color: transparent;
+    height: 40px;
+}
+
+.newsletter button {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 250px;
+    bottom: 40px;
+    border: none;
+    background: transparent;
+}
+
+.newsletter p {
+    font-size: 11px;
+    margin-top: 10px;
+}
+
+.newsletter p a {
+    font-weight: 600;
+    text-decoration: underline;
+    color: #000;
+    cursor: pointer;
+}
+
+@media (min-width: 380px) {
+    .newsletter {
+        width: 300px;
+        margin: auto;
+    }
+    .newsletter input {
+        width: 300px;
+    }
+}

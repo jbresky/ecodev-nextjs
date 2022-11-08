@@ -50,6 +50,7 @@ export default function Product({ item, showAs }) {
                     </a>
                     <div>
                         <p>{item.name}</p>
+                        {/* category name (sin negrita) */}
                         <p>$ {item.price}</p>
                     </div>
                 </article>

@@ -77,6 +77,16 @@ a.gama {
     transition: .3s ease-in-out;
 }
 
+.featured {
+    display: flex;
+    gap: 20px;
+    padding: 2rem 0;
+}
+
+.featured p {
+    font-weight: 700;
+}
+
 .image:hover {
     transform: scale(1.05);
 }
