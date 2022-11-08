@@ -15,9 +15,9 @@ export default function Product({ item, showAs }) {
                     />
                 </a>
             </div>
-                <a class={styles.gama} href="/products/eco-products">
-                    <button class={styles.gama}>Shop {item.name}</button>
-                </a>
+            <a class={styles.gama} href="/products/eco-products">
+                <button class={styles.gama}>Shop {item.name}</button>
+            </a>
             {/* <button>{item.off}</button> */}
             {/* <h3>{item.name}</h3> */}
             <div>
@@ -34,5 +34,26 @@ export default function Product({ item, showAs }) {
     }
     if (showAs === 'Detail') {
 
+    }
+    if (showAs === 'Featured') {
+        return (
+            <div className={styles.featured}>
+                <article>
+                    <a>
+                        <Image
+                            className={styles.image}
+                            src={`/img/products/${item.image}`}
+                            alt={item.name}
+                            width={220}
+                            height={220}
+                        />
+                    </a>
+                    <div>
+                        <p>{item.name}</p>
+                        <p>$ {item.price}</p>
+                    </div>
+                </article>
+            </div>
+        )
     }
 }
