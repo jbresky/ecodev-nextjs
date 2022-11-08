@@ -7,6 +7,7 @@ import axios from 'axios';
 import Footer from '../components/Footer'
 import stylesProduct from '../styles/product.module.css'
 import BrandSignals from '../components/BrandSignals'
+import Newsletter from '../components/Newsletter'
 
 
 export default function Home() {
@@ -40,31 +41,45 @@ export default function Home() {
             </Link>
           </div>
         </section>
-        <h1 style={{padding: "1rem 2rem", fontWeight: "normal"}}>Shop product range</h1>
-        <div className={stylesProduct.items}>
-          {products && products.map(item => {
-            console.log(products);
-            if (item.insale === null) {
-              return <Product
-                showAs='Home'
-                key={item.id}
-                item={item}
-              />
-            }
-          })}
-        </div>
-        <BrandSignals />
-        <div className={stylesProduct.items}>
-          {products && products.map(item => {
-            if (item.insale === null) {
-              return <Product
-                showAs='Home'
-                key={item.id}
-                item={item}
-              />
-            }
-          })}
-        </div>
+        <section className={styles.main}>
+          <h1 style={{fontWeight: "normal" }}>Shop product range</h1>
+          <div className={stylesProduct.items}>
+            {products && products.map(item => {
+              console.log(products);
+              if (item.insale === null) {
+                return <Product
+                  showAs='Home'
+                  key={item.id}
+                  item={item}
+                />
+              }
+            })}
+          </div>
+          <BrandSignals />
+          <div className={stylesProduct.items}>
+            {products && products.map(item => {
+              if (item.insale === null) {
+                return <Product
+                  showAs='Home'
+                  key={item.id}
+                  item={item}
+                />
+              }
+            })}
+          </div>
+          <div className={stylesProduct.items}>
+            {products && products.map(item => {
+              if (item.insale === 1) {
+                return <Product
+                  showAs='Featured'
+                  key={item.id}
+                  item={item}
+                />
+              }
+            })}
+          </div>
+          <Newsletter/>
+        </section>
       </Layout>
       <Footer />
     </>

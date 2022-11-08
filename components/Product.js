@@ -10,20 +10,14 @@ export default function Product({ item, showAs }) {
                         className={styles.image}
                         src={`/img/products/${item.image}`}
                         alt={item.name}
-                        width={380}
-                        height={400}
+                        width={350}
+                        height={350}
                     />
                 </a>
             </div>
             <a class={styles.gama} href="/products/eco-products">
                 <button class={styles.gama}>Shop {item.name}</button>
             </a>
-            {/* <button>{item.off}</button> */}
-            {/* <h3>{item.name}</h3> */}
-            <div>
-                {/* precio con y sin descuento */}
-            </div>
-            {/* <button>Agregar al carrito</button> */}
         </article>
     }
     if (showAs === 'Store') {

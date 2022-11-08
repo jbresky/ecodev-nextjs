@@ -3,15 +3,12 @@
 }
 
 .main {
-  min-height: 100vh;
-  padding: 4rem;
+  padding: 2rem;
   flex: 1;
   display: flex;
   margin: auto;
   flex-direction: column;
   justify-content: center;
-  width: 80vw;
-  /* align-items: center; */
 }
 
 .footer {
