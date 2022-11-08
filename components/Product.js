@@ -16,7 +16,7 @@ export default function Product({ item, showAs }) {
                 </a>
             </div>
                 <a class={styles.gama} href="/products/eco-products">
-                    <button class={styles.gama}>Shop category_name</button>
+                    <button class={styles.gama}>Shop {item.name}</button>
                 </a>
             {/* <button>{item.off}</button> */}
             {/* <h3>{item.name}</h3> */}

@@ -4,7 +4,7 @@ import connection from '../connection';
 const initCategory = (sequelize, Types) => {
   class Category extends Model {
     static associate(models){
-      Category.hasMany(models.Product, { foreignKey: 'category_id' })
+      Category.hasMany(models.Products, { foreignKey: 'category_id' })
     }
   }
   Category.init(
@@ -13,8 +13,8 @@ const initCategory = (sequelize, Types) => {
     },
     {
       sequelize,
-      modelName: 'Product',
-      tableName: 'products',
+      modelName: 'Category',
+      tableName: 'categories',
       timestamps: false
     }
   );

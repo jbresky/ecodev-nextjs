@@ -5,7 +5,7 @@ const initProduct = (sequelize, Types) => {
   class Product extends Model {
     static associate(models){
       Product.belongsToMany(models.User, { foreignKey: 'product_id' })
-      Product.belongsTo(models.Category, { foreignKey: 'category_id' })
+      Product.belongsTo(models.Category, {as: 'category'}, { foreignKey: 'category_id' })
       Product.belongsToMany(models.Cart, { foreignKey: 'product_id' })
     }
   }

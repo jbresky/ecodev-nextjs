@@ -40,9 +40,10 @@ export default function Home() {
             </Link>
           </div>
         </section>
-        <h1>Shop product range</h1>
+        <h1 style={{padding: "1rem 2rem", fontWeight: "normal"}}>Shop product range</h1>
         <div className={stylesProduct.items}>
           {products && products.map(item => {
+            console.log(products);
             if (item.insale === null) {
               return <Product
                 showAs='Home'
