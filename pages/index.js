@@ -56,7 +56,7 @@ export default function Home() {
             })}
           </div>
           <BrandSignals />
-          <div className={stylesProduct.items}>
+          {/* <div className={stylesProduct.items}>
             {products && products.map(item => {
               if (item.insale === null) {
                 return <Product
@@ -78,7 +78,7 @@ export default function Home() {
               }
             })}
           </div>
-          <Newsletter/>
+          <Newsletter/> */}
         </section>
       </Layout>
       <Footer />
