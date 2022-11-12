@@ -8,8 +8,8 @@ export default function Newsletter() {
                 <Image
                     src='/img/back/mail.png'
                     alt='mailing'
-                    width={150}
-                    height={100}
+                    width={100}
+                    height={83}
                     className={style.mailing}
                 />
                 <span>10% off, promos, and the bests eco-products ever!

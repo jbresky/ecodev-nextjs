@@ -1,9 +1,11 @@
 import Image from "next/dist/client/image"
 import styles from '../styles/product.module.css'
+import styleStore from '../styles/store.module.css'
 
 export default function Product({ item, showAs }) {
+
     if (showAs === 'Home') {
-        return <article style={{ display: 'flex', flexDirection: 'column' }}>
+        return <article className={styles.article}>
             <div>
                 <a>
                     <Image
@@ -20,13 +22,40 @@ export default function Product({ item, showAs }) {
             </a>
         </article>
     }
+
     if (showAs === 'Store') {
-        // Store = sección productos. También sirve para la sección de "destacados"
+        return <article className={styleStore.article}>
+            <div className={styleStore.info}>
+                <a>
+                    <Image
+                        className={styles.image}
+                        src={`/img/products/${item.image}`}
+                        alt={item.name}
+                        width={230}
+                        height={230}
+                    />
+                </a>
+            </div>
+            <a class={styleStore.heart} href="/products/eco-products">
+                <button class={styleStore.heart}>
+                    <i class="fas fa-heart fav-red"></i>
+                </button>
+            </a>
+            <div>
+                <p className={styleStore.name}>{item.name}</p>
+                {/* <p>{item.category}</p> */}
+                <p className={styleStore.price}>$ {item.price}</p>
+                {/* precio con descuento (calculo) */}
+            </div>
+        </article>
     }
+
     if (showAs === 'Cart') {
 
     }
+
     if (showAs === 'Detail') {
+
 
     }
     if (showAs === 'Featured') {
