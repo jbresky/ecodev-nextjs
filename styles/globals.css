@@ -1,3 +1,149 @@
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-primary-enter {
+    position: absolute;
+    transform: translateY(-110%);
+  }
+  .menu-primary-enter-active {
+    transform: translateY(0%);
+    transition: all 500ms ease;
+  }
+  .menu-primary-exit {
+    position: absolute;
+  }
+  .menu-primary-exit-active {
+    transform: translateY(-110%);
+    transition: all 500ms ease;
+  }
+  
+  
+  .menu-secondary-enter {
+    transform: translateY(110%);
+  }
+  .menu-secondary-enter-active {
+    transform: translateY(0%);
+    transition: all 500ms ease;
+  }
+  .menu-secondary-exit {
+  position: absolute;
+  }
+  .menu-secondary-exit-active {
+    transform: translateY(110%);
+    transition: all 500ms ease;
+  }
+
+
+/* dropdown menu ECODEV */
+
+/* .sideFilter{
+    margin: 0 30px;
+    width: 20%;
+}
+
+.sideFilter div.transform{
+    padding: 10px;
+}
+
+.side-filter ul li.filterButton{
+    border-bottom: 1px solid #D6DADF;
+    padding: 10px 0;
+}
+
+.aside ul.listCategory{
+    padding-left: 2.4rem;
+}
+
+.aside ul.listCategory li{
+    padding: 16px 0;
+    color: #19124F;
+    font-size: 14px;
+    cursor: pointer;
+}
+.aside ul.listCategory li:hover{
+    text-decoration: underline;
+}
+
+.aside a{
+    color: #000;
+    text-decoration: none;
+}
+.aside h2{
+    padding: 0 0 20px;
+    font-size: 20px;
+    color: #19124F;
+}
+
+.sideFilter ul{
+    list-style: none;
+}
+.sideFilter ul button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.searchCategory, .searchPrice{
+    padding-left: .8rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.searchCategory:focus, .searchPrice:focus{
+    outline: 0;
+    box-shadow: inset 0 0 0 3px rgb(177, 201, 177);
+}
+.sideFilter ul button i{
+    font-size: 1rem;
+    transition: transform .3s;
+}
+
+.sideFilter ul button.allCategory{
+    padding-left: 1.5rem;
+    margin: 20px 0 10px;
+}
+
+.sideFilter ul button.allCategory span:hover{
+    text-decoration: underline;
+}
+.sideFilter ul button span{
+    font-size: 14px;
+    font-weight: 600;
+    color: #19124F;
+}
+.sideFilter div.filterPrice form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    padding-left: 2.4rem;
+}
+.sideFilter div.filterPrice form label{
+    height: 40px;
+}
+
+.sideFilter div.filterPrice form label span{
+    font-size: .9rem;
+    margin-left: 1rem;
+}
+
+.dropdown{
+    transition: max-height .5s ease-out;
+    max-height: 20em;
+    overflow: hidden;
+}
+
+.hide{
+    max-height: 0 !important;
+}
+.rotate-90{
+    transform: rotate(180deg);
+} */
+
+
 html,
 body {
   padding: 0;

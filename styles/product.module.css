@@ -1,11 +1,11 @@
-.items{
+.items {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
 
-.item{
+.item {
     background-color: white;
     padding: 20px;
     font-size: 20px;
@@ -16,22 +16,30 @@
     gap: 10px;
 }
 
-.item h3{
+.item h3 {
     font-size: 32px;
     margin: 5px 0;
 }
 
-.page{
+.article {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page {
     background-color: white;
     padding: 40px;
     display: flex;
     justify-content: center;
     box-shadow: 0 0 50px rgba(0, 0, 0, .15);
     transform: scale(0);
-    animation: scale .3s ease forwards 
+    animation: scale .3s ease forwards
 }
 
-button.gama{
+button.gama {
     background: #ffffff;
     border: none;
     border-radius: 50px;
@@ -44,12 +52,12 @@ button.gama{
 }
 
 a.gama {
-    position: relative;   
+    position: absolute;
     bottom: 50px;
-    left: 100px;
 }
 
-@keyframes scale{
+
+@keyframes scale {
     from {
         transform: scale(0)
     }
@@ -59,18 +67,18 @@ a.gama {
     }
 }
 
-.info{
+.info {
     display: flex;
     gap: 20px;
     flex-direction: column;
 }
 
-.price{
+.price {
     font-size: 28px;
     margin: 10px 0;
 }
 
-.image{
+.image {
     border-radius: 4px;
     object-fit: cover;
     cursor: pointer;
@@ -81,6 +89,7 @@ a.gama {
     display: flex;
     gap: 20px;
     padding: 2rem 0;
+    flex-wrap: nowrap;
 }
 
 .featured p {
@@ -91,7 +100,7 @@ a.gama {
     transform: scale(1.05);
 }
 
-.listItem{
+.listItem {
     display: flex;
     border-bottom: solid 1px #ccc;
     justify-content: space-around;

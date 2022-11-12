@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 import Product from '../components/Product'
 import axios from 'axios';
 import Footer from '../components/Footer'
-import stylesProduct from '../styles/product.module.css'
+import styleProduct from '../styles/product.module.css'
 import BrandSignals from '../components/BrandSignals'
 import Newsletter from '../components/Newsletter'
 
@@ -42,10 +42,9 @@ export default function Home() {
           </div>
         </section>
         <section className={styles.main}>
-          <h1 style={{fontWeight: "normal" }}>Shop product range</h1>
-          <div className={stylesProduct.items}>
+          <h1 style={{ fontWeight: "normal" }}>Shop product range</h1>
+          <div className={styleProduct.items}>
             {products && products.map(item => {
-              console.log(products);
               if (item.insale === null) {
                 return <Product
                   showAs='Home'
@@ -56,7 +55,7 @@ export default function Home() {
             })}
           </div>
           <BrandSignals />
-          {/* <div className={stylesProduct.items}>
+          <div className={styleProduct.items}>
             {products && products.map(item => {
               if (item.insale === null) {
                 return <Product
@@ -67,7 +66,8 @@ export default function Home() {
               }
             })}
           </div>
-          <div className={stylesProduct.items}>
+          <h1 style={{ fontWeight: "normal" }}>Featured products</h1>
+          <div className={styleProduct.items}>
             {products && products.map(item => {
               if (item.insale === 1) {
                 return <Product
@@ -78,7 +78,7 @@ export default function Home() {
               }
             })}
           </div>
-          <Newsletter/> */}
+          <Newsletter />
         </section>
       </Layout>
       <Footer />
