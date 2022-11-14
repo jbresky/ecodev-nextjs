@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { CSSTransition } from 'react-transition-group';
-import { Arrow } from '../components/Icons'
+import { Arrow } from './icons'
 import styles from '../styles/store.module.css'
 
 export default function DropdownMenu() {
@@ -24,7 +24,6 @@ export default function DropdownMenu() {
 
     return (
         <>
-            <h1>Filter</h1>
             <div className={styles.dropdown} style={{ height: menuHeight }}>
                 <CSSTransition
                     in={activeMenu === 'main'}
@@ -55,10 +54,10 @@ export default function DropdownMenu() {
                     classNames="menu-secondary"
                     unmountOnExit
                     onEnter={calcHeight}
-                    >
+                >
                     <div className={styles.menu}>
-                        <DropdownItem goToMenu='main' leftIcon={<Arrow/>}>
-                            <h2>Categories</h2>
+                        <DropdownItem goToMenu='main' leftIcon={<Arrow />}>
+                            <h3>Categories</h3>
                         </DropdownItem>
                         <DropdownItem>Kangaroo</DropdownItem>
                         <DropdownItem>Frog</DropdownItem>
@@ -73,15 +72,26 @@ export default function DropdownMenu() {
                     classNames="menu-secondary"
                     unmountOnExit
                     onEnter={calcHeight}
-                    >
+                >
                     <div className={styles.menu}>
-                        <DropdownItem goToMenu='main' leftIcon={<Arrow/>}>
-                            <h2>Price</h2>
+                        <DropdownItem goToMenu='main' leftIcon={<Arrow />}>
+                            <h3>Price</h3>
                         </DropdownItem>
-                        <DropdownItem>1</DropdownItem>
-                        <DropdownItem>2</DropdownItem>
-                        <DropdownItem>3</DropdownItem>
-                        <DropdownItem>4</DropdownItem>
+                        <DropdownItem>
+                            <div className={styles.checkboxPrice}>
+                                $ <input type='checkbox' />
+                            </div>
+                        </DropdownItem>
+                        <DropdownItem>
+                            <div className={styles.checkboxPrice}>
+                                $$ <input type='checkbox' />
+                            </div>
+                        </DropdownItem>
+                        <DropdownItem>
+                            <div className={styles.checkboxPrice}>
+                                $$$ <input type='checkbox' />
+                            </div>
+                        </DropdownItem>
                     </div>
                 </CSSTransition>
             </div>

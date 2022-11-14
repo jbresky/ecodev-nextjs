@@ -7,7 +7,7 @@ export default function Product({ item, showAs }) {
     if (showAs === 'Home') {
         return <article className={styles.article}>
             <div>
-                <a>
+                <a href="/store/detail">
                     <Image
                         className={styles.image}
                         src={`/img/products/${item.image}`}
@@ -17,7 +17,7 @@ export default function Product({ item, showAs }) {
                     />
                 </a>
             </div>
-            <a class={styles.gama} href="/products/eco-products">
+            <a class={styles.gama}>
                 <button class={styles.gama}>Shop {item.name}</button>
             </a>
         </article>
@@ -25,14 +25,14 @@ export default function Product({ item, showAs }) {
 
     if (showAs === 'Store') {
         return <article className={styleStore.article}>
-            <div className={styleStore.info}>
+            <div>
                 <a>
                     <Image
                         className={styles.image}
                         src={`/img/products/${item.image}`}
                         alt={item.name}
-                        width={230}
-                        height={230}
+                        width={200}
+                        height={200}
                     />
                 </a>
             </div>
@@ -41,10 +41,10 @@ export default function Product({ item, showAs }) {
                     <i class="fas fa-heart fav-red"></i>
                 </button>
             </a>
-            <div>
-                <p className={styleStore.name}>{item.name}</p>
+            <div className={styleStore.info}>
+                <span className={styleStore.name}>{item.name}</span>
                 {/* <p>{item.category}</p> */}
-                <p className={styleStore.price}>$ {item.price}</p>
+                <span className={styleStore.price}>$ {item.price}</span>
                 {/* precio con descuento (calculo) */}
             </div>
         </article>
@@ -55,7 +55,22 @@ export default function Product({ item, showAs }) {
     }
 
     if (showAs === 'Detail') {
-
+        return <article className={styles.article}>
+        <div>
+            <a>
+                <Image
+                    className={styles.image}
+                    src={`/img/products/${item.image}`}
+                    alt={item.name}
+                    width={350}
+                    height={350}
+                />
+            </a>
+        </div>
+        <a class={styles.gama}>
+            <button class={styles.gama}>Shop {item.name}</button>
+        </a>
+    </article>
 
     }
     if (showAs === 'Featured') {
