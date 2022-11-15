@@ -1,4 +1,5 @@
 import Image from "next/dist/client/image"
+import Link from "next/link"
 import styles from '../styles/product.module.css'
 import styleStore from '../styles/store.module.css'
 
@@ -7,15 +8,17 @@ export default function Product({ item, showAs }) {
     if (showAs === 'Home') {
         return <article className={styles.article}>
             <div>
-                <a href="/store/detail">
-                    <Image
-                        className={styles.image}
-                        src={`/img/products/${item.image}`}
-                        alt={item.name}
-                        width={350}
-                        height={350}
-                    />
-                </a>
+                <Link href='/store/detail'>
+                    <a>
+                        <Image
+                            className={styles.image}
+                            src={`/img/products/${item.image}`}
+                            alt={item.name}
+                            width={350}
+                            height={350}
+                        />
+                    </a>
+                </Link>
             </div>
             <a class={styles.gama}>
                 <button class={styles.gama}>Shop {item.name}</button>
@@ -36,7 +39,7 @@ export default function Product({ item, showAs }) {
                     />
                 </a>
             </div>
-            <a class={styleStore.heart} href="/products/eco-products">
+            <a class={styleStore.heart}>
                 <button class={styleStore.heart}>
                     <i class="fas fa-heart fav-red"></i>
                 </button>
@@ -55,22 +58,24 @@ export default function Product({ item, showAs }) {
     }
 
     if (showAs === 'Detail') {
-        return <article className={styles.article}>
-        <div>
-            <a>
-                <Image
-                    className={styles.image}
-                    src={`/img/products/${item.image}`}
-                    alt={item.name}
-                    width={350}
-                    height={350}
-                />
+        return <div className={styles.detail}>
+            <div>
+                <a>
+                    <Image
+                        className={styles.image}
+                        src={`/img/products/${item.image}`}
+                        alt={item.name}
+                        width={300}
+                        height={300}
+                    />
+                </a>
+            </div>
+            <a class={styleStore.heart} href="/products/eco-products">
+                <button class={styleStore.heart}>
+                    <i class="fas fa-heart fav-red"></i>
+                </button>
             </a>
         </div>
-        <a class={styles.gama}>
-            <button class={styles.gama}>Shop {item.name}</button>
-        </a>
-    </article>
 
     }
     if (showAs === 'Featured') {
