@@ -1,6 +1,6 @@
 import User from "../../../database/models/User";
 
-export default async (req, res) => {
+export default async function GetUsers(req, res){
     try {
         const users = await User.findAll({
         });
